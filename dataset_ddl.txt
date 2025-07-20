@@ -1,0 +1,36 @@
+DROP TABLE IF EXISTS table_m3 CASCADE;
+
+CREATE TABLE table_m3 (
+    "User_ID"                   VARCHAR(10)   PRIMARY KEY,
+    "Age"                       INT           CHECK ( "Age" > 0 ),
+    "Country"                   VARCHAR(50)   NOT NULL,
+    "Streaming_Platform"        VARCHAR(50)   NOT NULL,
+    "Top_Genre"                 VARCHAR(50)   NOT NULL,
+    "Minutes_Streamed_Per_Day"  INT           NOT NULL,
+    "Number_Of_Songs_Liked"     INT           NOT NULL,
+    "Most_Played_Artist"        VARCHAR(50)   NOT NULL,
+    "Subscription_Type"         VARCHAR(10)   NOT NULL,
+    "Listening_Time"            VARCHAR(10)   NOT NULL,
+    "Discover_Weekly_Engagement" DECIMAL(5,2) NOT NULL,
+    "Repeat_Song_Rate"          DECIMAL(5,2)  NOT NULL
+);
+
+COPY table_m3 (
+    "User_ID",
+    "Age",
+    "Country",
+    "Streaming_Platform",
+    "Top_Genre",
+    "Minutes_Streamed_Per_Day",
+    "Number_Of_Songs_Liked",
+    "Most_Played_Artist",
+    "Subscription_Type",
+    "Listening_Time",
+    "Discover_Weekly_Engagement",
+    "Repeat_Song_Rate"
+)
+FROM '/tmp/P2M3_Yoseph_Radityo_data_raw.csv'
+DELIMITER ','
+CSV HEADER;
+
+SELECT * FROM table_m3;
