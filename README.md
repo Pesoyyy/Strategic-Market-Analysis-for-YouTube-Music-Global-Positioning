@@ -65,7 +65,7 @@ Di proyek ini, saya membuat pipeline ETL batch otomatis pakai Apache Airflow unt
 
 ## Reference
 
-* [Dataset from Kaggle]([https://www.kaggle.com/datasets/atharvasoundankar/global-music-streaming-trends-and-listener-insights](https://www.kaggle.com/datasets/atharvasoundankar/global-music-streaming-trends-and-listener-insights))
+* [Dataset from Kaggle](https://www.kaggle.com/datasets/atharvasoundankar/global-music-streaming-trends-and-listener-insights)
 * [IFPI Global Music Report](https://www.ifpi.org/ifpi-global-music-report-global-recorded-music-revenues-grew-10-2-in-2023/)
 * [TikTok Music Report 2023](https://newsroom.tiktok.com/en-us/tiktok-music-evolution-report)
 * [Choco-Up](https://choco-up.com/blog/short-form-video-gen-z-tiktok)
