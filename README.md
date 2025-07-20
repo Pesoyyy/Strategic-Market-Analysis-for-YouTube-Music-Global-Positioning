@@ -6,14 +6,13 @@ Berikut adalah gambaran singkat dari file-file yang ada di repository saya.
 
 ```
 1. README.md - Penjelasan gambaran umum project
-2. description.md - Dokumentasi spesifik project
-3. data_ddl.txt - skema database
-4. data_raw.csv - Dataset raw yang didapatkan dari Kaggle
-5. data_clean.csv - Dataset raw yang sudah dibersihkan dan siap dipakai.
-6. DAG.py - Workflow otomasi Airflow
-7. DAG_graph.JPG - Hasil eksekusi DAG di Airflow
-8. GX.ipynb - Validasi data dengan Great Expectations
-9. /images/ (folder) - Hasil Visualisasi Analisa di Kibana beserta insightnya terhadap project ini
+2. data_ddl.txt - skema database
+3. data_raw.csv - Dataset raw yang didapatkan dari Kaggle
+4. data_clean.csv - Dataset raw yang sudah dibersihkan dan siap dipakai.
+5. DAG.py - Workflow otomasi Airflow
+6. DAG_graph.JPG - Hasil eksekusi DAG di Airflow
+7. GX.ipynb - Validasi data dengan Great Expectations
+8. /images/ (folder) - Hasil Visualisasi Analisa di Kibana beserta insightnya terhadap project ini
 ```
 
 ## Problem Background
@@ -62,7 +61,7 @@ Dataset diambil dari: [https://www.kaggle.com/datasets/atharvasoundankar/global-
 
 ## Method
 
-Di proyek ini, saya membuat pipeline ETL batch otomatis pakai Apache Airflow untuk memindahkan data streaming musik dari PostgreSQL ke Elasticsearch. Sebelum dipakai, data saya validasi dengan Great Expectations (7 expectation, termasuk custom rules) dan saya transform—mulai dari normalisasi kolom sampai penanganan nilai hilang. Hasilnya, saya membuat dashboard analitik interaktif di Kibana yang fokus ke preferensi dan retensi pengguna. Semua itu ditujukan untuk kasih rekomendasi strategis ke Tim Analisis Pelanggan Youtube/YouTube Music.
+Di proyek ini, saya membuat pipeline ETL batch otomatis pakai Apache Airflow untuk memindahkan data streaming musik dari PostgreSQL ke Elasticsearch. Sebelum dipakai, data saya validasi dengan Great Expectations (7 expectation, termasuk custom rules) dan saya transform—mulai dari normalisasi kolom sampai penanganan nilai hilang. Hasilnya, saya membuat dashboard analitik interaktif di Kibana yang fokus ke preferensi dan retensi pengguna. Semua itu ditujukan untuk kasih rekomendasi strategis ke Tim Analisis Pelanggan Youtube/YouTube Music. Berikut adalah [hasil analisa](https://github.com/Pesoyyy/Strategic-Market-Analysis-for-YouTube-Music-Global-Positioning/tree/main/Hasil%20analisa) yang sudah saya buat dengan Kibana.
 
 ## Reference
 
